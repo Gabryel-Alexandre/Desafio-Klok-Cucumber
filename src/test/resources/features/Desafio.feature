@@ -17,6 +17,7 @@ Funcionalidade: Pesquisa de Itens
 	Cenario: Realizando Pesquisa de um item e filtrando por preco 
 		Quando eu digitar no campo pesquisa "harry potter"
 		E clicar no botao confirmar pesquisa
+		Entao o programa valida se a busca por "harry potter" ocorreu corretamente
 		E inserir no campo preco maximo "40"
 		E clicar no botao Ir 
 		Entao o programa valida que foi realmente filtrado no preco "40"

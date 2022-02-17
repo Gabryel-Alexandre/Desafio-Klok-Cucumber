@@ -32,6 +32,13 @@ public class PesquisaUtilizandoFiltroSteps {
 	   
 	   assertTrue(preco <= precoDoEscritoNoFiltro);
 }
+
+	@Entao("^o programa valida se a busca por \"([^\"]*)\" ocorreu corretamente$")
+	public void oProgramaValidaSeABuscaPorOcorreuCorretamente(String texto) throws Throwable {
+		String campoPesquisado = Na(TelaDePesquisaPage.class).itemHarryPotter.getText();
+
+		assertTrue(campoPesquisado.toLowerCase().contains(texto));
+	}
 		
 
 }

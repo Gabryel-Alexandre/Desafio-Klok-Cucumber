@@ -117,6 +117,16 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
+  "name": "o programa valida se a busca por \"harry potter\" ocorreu corretamente",
+  "keyword": "Entao "
+});
+formatter.match({
+  "location": "PesquisaUtilizandoFiltroSteps.oProgramaValidaSeABuscaPorOcorreuCorretamente(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
   "name": "inserir no campo preco maximo \"40\"",
   "keyword": "E "
 });
