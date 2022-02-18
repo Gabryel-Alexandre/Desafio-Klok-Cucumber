@@ -23,7 +23,8 @@ public class PesquisaSteps {
 	@Entao("o programa valida se a busca por {string} ocorreu")
 	public void oProgramaValidaSeABuscaOcorreu(String texto) {
 		String campoPesquisado = Na(TelaDePesquisaPage.class).headsetPesquisado.getText();
-
+		
+		
 		assertTrue(campoPesquisado.toLowerCase().contains(texto));
 	}
 
