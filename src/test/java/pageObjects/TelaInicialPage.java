@@ -12,6 +12,11 @@ public class TelaInicialPage {
 	@FindBy(id = "nav-search-submit-button")
 	private WebElement botaoConfirmarPesquisa;
 	
+	@FindBy(xpath = "//*[@id=\"searchDropdownBox\"]")
+	private WebElement botaoDropdownCategorias;
+	
+	@FindBy(xpath = "//*[@id=\"searchDropdownBox\"]/option[5]")
+	private WebElement botaoCategoriaAutomotivo;
 	
 	public void inserirTextoDePesquisa(String texto) {
 		barraInputDePesquisa.sendKeys(texto);
@@ -19,6 +24,14 @@ public class TelaInicialPage {
 	
 	public void clicarNoBotaoConfirmarPesquisa() {
 		botaoConfirmarPesquisa.click();
+	}
+	
+	public void clicarNoDropdownDeCategorias() {
+		botaoDropdownCategorias.click();
+	}
+	
+	public void clicarNoBotaoCategoriaAutomotivo() {
+		botaoCategoriaAutomotivo.click();
 	}
 
 }

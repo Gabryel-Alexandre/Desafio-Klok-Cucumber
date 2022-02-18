@@ -160,4 +160,61 @@ formatter.embedding("image/png", "embedded2.png", null);
 formatter.after({
   "status": "passed"
 });
+formatter.scenario({
+  "name": "Realizando Pesquisa por uma categoria e nao escrevendo nada",
+  "description": "",
+  "keyword": "Cenario",
+  "tags": [
+    {
+      "name": "@Pesq"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "eu clicar no dropdown de categorias",
+  "keyword": "Quando "
+});
+formatter.match({
+  "location": "PesquisaPorCategoriaSteps.euClicarNoDropdownDeCategorias()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clicar na categoria \"Automotivo\"",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "PesquisaPorCategoriaSteps.clicarNaCategoria(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clicar no botao confirmar pesquisa",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "PesquisaSteps.clicarNoBotaoConfirmarPesquisa()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "o programa valida que foi pesquisado por \"Automotivo\"",
+  "keyword": "Entao "
+});
+formatter.match({
+  "location": "PesquisaPorCategoriaSteps.oProgramaValidaQueFoiPesquisadoPor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded3.png", null);
+formatter.after({
+  "status": "passed"
+});
 });
