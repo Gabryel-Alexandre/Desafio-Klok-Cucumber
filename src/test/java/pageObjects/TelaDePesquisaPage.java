@@ -5,8 +5,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class TelaDePesquisaPage {
 	
-	@FindBy(xpath = "//*[@id=\"search\"]/div[1]/div[1]/div/span[3]/div[2]/div[6]")
-	public WebElement headsetPesquisado;
 	
 	@FindBy(xpath = "//*[@id=\"search\"]/div[1]/div[1]/div/span[3]/div[2]/div[1]/div/div/div/div[1]/span[1]")
 	public WebElement nenhumResultado;
@@ -21,11 +19,8 @@ public class TelaDePesquisaPage {
 	public WebElement itemFiltradoPorPreco;
 	
 	
-	@FindBy(xpath = "//*[@id=\"search\"]/div[1]/div[1]/div/span[3]/div[2]/div[3]/div/div/div/div")
-	public WebElement itemPesquisadoHarryPotter;
-	
-	public void inserirNoCampoMaiorPreco(String teto) {
-		campoMaiorPreco.sendKeys(teto);
+	public void inserirNoCampoMaiorPreco(String texto) {
+		campoMaiorPreco.sendKeys(texto);
 	}
 	
 	public void clicarNoBotaoIr() {

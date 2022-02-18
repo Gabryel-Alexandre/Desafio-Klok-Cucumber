@@ -4,9 +4,9 @@
 Funcionalidade: Pesquisa de Itens
 
 	Cenario: Realizando Pesquisa com Sucesso 
-		Quando eu digitar no campo pesquisa "headset"
+		Quando eu digitar no campo pesquisa "mouse"
 		E clicar no botao confirmar pesquisa
-		Entao o programa valida se a busca por "headset" ocorreu  
+		Entao o programa valida se a busca por "mouse" ocorreu  
 
 	Cenario: Realizando Pesquisa de um item que nao existe
 		Quando eu digitar no campo pesquisa "auvqwdfhvqwfhqhfsvhfsf2fe2oujbfhji2fvbhjibef"

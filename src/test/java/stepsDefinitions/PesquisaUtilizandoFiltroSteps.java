@@ -7,6 +7,10 @@ import pageObjects.TelaDePesquisaPage;
 
 import static org.junit.Assert.assertTrue;
 import static utils.Utils.Na;
+import static utils.Utils.driver;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 
 public class PesquisaUtilizandoFiltroSteps {
@@ -35,8 +39,11 @@ public class PesquisaUtilizandoFiltroSteps {
 
 	@Entao("^o programa valida se a busca por \"([^\"]*)\" ocorreu corretamente$")
 	public void oProgramaValidaSeABuscaPorOcorreuCorretamente(String texto) throws Throwable {
-		String campoPesquisado = Na(TelaDePesquisaPage.class).itemPesquisadoHarryPotter.getText();
 
+		WebElement itemNaSegundaPosicaoDePesquisa = driver.findElements(By.xpath("/html/body/div[1]/div[2]/div[1]/div[1]/div/span[3]/div[2]/div[4]/div/div/div")).get(0);
+		
+		String campoPesquisado = itemNaSegundaPosicaoDePesquisa.getText();
+		
 		assertTrue(campoPesquisado.toLowerCase().contains(texto));
 	}
 		

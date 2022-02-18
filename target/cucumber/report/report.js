@@ -13,7 +13,7 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "eu digitar no campo pesquisa \"headset\"",
+  "name": "eu digitar no campo pesquisa \"mouse\"",
   "keyword": "Quando "
 });
 formatter.match({
@@ -33,7 +33,7 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "o programa valida se a busca por \"headset\" ocorreu",
+  "name": "o programa valida se a busca por \"mouse\" ocorreu",
   "keyword": "Entao "
 });
 formatter.match({
