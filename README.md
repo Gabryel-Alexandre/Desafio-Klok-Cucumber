@@ -1,7 +1,7 @@
  # Desafio-Klok-Cucumber 
- <h2>Projeto desafio estágio para QA na empresa Klok Tech </h2>
+## Projeto desafio estágio para QA na empresa Klok Tech 
  
-<strong><em> ------INFORMAÇÕES----------------</em> </strong>
+### INFORMAÇÕES
 <p>
  <ul>
  <li>Estou utilizando o site da amazon para a realização dos testes https://www.amazon.com.br</li>
@@ -13,7 +13,7 @@
  
  
  
- <strong><em>------INFORMAÇÕES TÉCNICAS----------------------------------</em> </strong>
+ ### INFORMAÇÕES TÉCNICAS
  <p>
  <ul>
   
