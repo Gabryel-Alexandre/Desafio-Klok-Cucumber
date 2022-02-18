@@ -163,12 +163,7 @@ formatter.after({
 formatter.scenario({
   "name": "Realizando Pesquisa por uma categoria e nao escrevendo nada",
   "description": "",
-  "keyword": "Cenario",
-  "tags": [
-    {
-      "name": "@Pesq"
-    }
-  ]
+  "keyword": "Cenario"
 });
 formatter.before({
   "status": "passed"
@@ -184,11 +179,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "clicar na categoria \"Automotivo\"",
+  "name": "clicar no departamento \"Automotivo\"",
   "keyword": "E "
 });
 formatter.match({
-  "location": "PesquisaPorCategoriaSteps.clicarNaCategoria(String)"
+  "location": "PesquisaPorCategoriaSteps.clicarNoDepartamento(String)"
 });
 formatter.result({
   "status": "passed"
@@ -209,6 +204,26 @@ formatter.step({
 });
 formatter.match({
   "location": "PesquisaPorCategoriaSteps.oProgramaValidaQueFoiPesquisadoPor(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clicar na imagem de pneu de carro",
+  "keyword": "E "
+});
+formatter.match({
+  "location": "PesquisaPorCategoriaSteps.clicarNaImagemDePneuDeCarro()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "o programa valida que a pesquisa para \"pneu\" foi concluida",
+  "keyword": "Entao "
+});
+formatter.match({
+  "location": "PesquisaPorCategoriaSteps.oProgramaValidaQueAPesquisaParaFoiConcluida(String)"
 });
 formatter.result({
   "status": "passed"

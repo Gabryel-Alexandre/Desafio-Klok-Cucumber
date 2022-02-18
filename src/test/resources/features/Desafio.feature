@@ -21,9 +21,14 @@ Funcionalidade: Pesquisa de Itens
 		E inserir no campo preco maximo "40"
 		E clicar no botao Ir 
 		Entao o programa valida que foi realmente filtrado no preco "40"
-		
+	
+	
 	Cenario: Realizando Pesquisa por uma categoria e nao escrevendo nada
 		Quando eu clicar no dropdown de categorias
-		E clicar na categoria "Automotivo"
+		E clicar no departamento "Automotivo"
 		E clicar no botao confirmar pesquisa
 		Entao o programa valida que foi pesquisado por "Automotivo"
+		E clicar na imagem de pneu de carro 
+		Entao o programa valida que a pesquisa para "pneu" foi concluida
+		
+		
