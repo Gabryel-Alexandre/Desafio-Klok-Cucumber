@@ -27,15 +27,15 @@ public class PesquisaUtilizandoFiltroSteps {
 	   
 	   int preco = Integer.parseInt(precoString);
 	   
-	   int precoDoEscritoNoFiltro = Integer.parseInt(precoDoFiltroString);
+	   int precoEscritoNoFiltro = Integer.parseInt(precoDoFiltroString);
 	
 	   
-	   assertTrue(preco <= precoDoEscritoNoFiltro);
+	   assertTrue(preco <= precoEscritoNoFiltro);
 }
 
 	@Entao("^o programa valida se a busca por \"([^\"]*)\" ocorreu corretamente$")
 	public void oProgramaValidaSeABuscaPorOcorreuCorretamente(String texto) throws Throwable {
-		String campoPesquisado = Na(TelaDePesquisaPage.class).itemHarryPotter.getText();
+		String campoPesquisado = Na(TelaDePesquisaPage.class).itemPesquisadoHarryPotter.getText();
 
 		assertTrue(campoPesquisado.toLowerCase().contains(texto));
 	}
